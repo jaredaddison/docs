@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite-plugin-windicss'
 import aspectRatio from 'windicss/plugin/aspect-ratio'
+import typography from 'windicss/plugin/typography'
+import forms from 'windicss/plugin/forms'
 
 export default defineConfig({
   extract: {
@@ -13,10 +15,10 @@ export default defineConfig({
   },
   attributify: true,
   plugins: [
-    aspectRatio,
+    aspectRatio,typography,forms
   ],
   shortcuts: {
-    'bg-main': 'bg-white dark:bg-[#111]',
+    'bg-main': 'bg-white dark:bg-[#121212]',
   },
   theme: {
     extend: {
